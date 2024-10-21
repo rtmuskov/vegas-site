@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мой профиль</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="profile-container">
+        <h1>Мой профиль</h1>
+        <form id="profile-form">
+            <label for="profile-name">Имя:</label>
+            <input type="text" id="profile-name" name="profile-name" value="Ваше имя">
+            
+            <label for="profile-email">Электронная почта:</label>
+            <input type="email" id="profile-email" name="profile-email" value="email@example.com">
+            
+            <label for="profile-password">Пароль:</label>
+            <input type="password" id="profile-password" name="profile-password" value="********">
+            
+            <button type="submit">Сохранить изменения</button>
+        </form>
+        
+        <h2>Мои списки желаемых товаров</h2>
+        <ul>
+            <li>Список 1</li>
+            <li>Список 2</li>
+            <!-- Добавьте больше списков по мере необходимости -->
+        </ul>
+        
+        <h2>Настройки уведомлений</h2>
+        <label for="notifications">Уведомлять о новых предложениях:</label>
+        <input type="checkbox" id="notifications" name="notifications" checked>
+        
+        <h2>Безопасность аккаунта</h2>
+        <label for="2fa">Двухфакторная аутентификация:</label>
+        <input type="checkbox" id="2fa" name="2fa">
+        
+        <button type="button" onclick="manageSessions()">Управление сессиями</button>
+    </div>
+</body>
+</html>
